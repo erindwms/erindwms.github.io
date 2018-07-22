@@ -6,7 +6,7 @@
  * string, boolean, NaN, undefined, and null. Complex data types include: object, array, and function.
 */
 
-// 1. SIMPLE (OR PRIMATIVE) DATA TYPES
+// 1. SIMPLE (OR PRIMATIVE)
 /* Number - a numeric value
  * +Infinity - numeric value that represents positive infinity
  * -Infinity - numberic value that represents negative infinity
@@ -27,7 +27,7 @@
 var a = 1;
 var b = a; // the value stored in "a" is now copied into "b"
 
-// 2. COMPLEX DATA TYPES
+// 2. COMPLEX 
 /* 1. Object - a collection of key:value pairs.
  * The syntax for creating an object literal is curly {} brackets.
  * Commas seperate key:value pairs.
