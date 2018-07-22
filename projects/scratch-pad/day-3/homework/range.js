@@ -26,8 +26,20 @@ function range(start, end) {
 // I: 2 intergers as parameters
 // O: return an Array containing all numbers between the 2 parameters
 
-var i;
+
 var result = [];
+if (start < end) {
+  for (var i = start; i <= end; i++) {
+    result.push(i);  
+  } 
+} else { 
+    for (var i = start; i >= end; i--) {
+    result.push(i);
+    } 
+}
+return result;
+
+
 
     
     
@@ -45,3 +57,7 @@ if((typeof process !== 'undefined') &&
     // here, export any references you need for tests //
     module.exports.range = range;
 }
+
+
+
+

@@ -114,9 +114,15 @@ function allStringsPass(strings, test) {
 // O: return true if all the strings pass the test
 
 for (var i =0; i < strings.length; i++) {
+    if(!test(strings[i])) {
+        return false;
+    } 
     
+    }
+        return true;
 }
-}    
+
+   
       
     
     

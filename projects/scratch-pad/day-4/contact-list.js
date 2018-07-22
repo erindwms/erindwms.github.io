@@ -63,20 +63,48 @@ function makeContactList() {
             contacts.push(contact);
             },
         findContact: function(fullName) {
+           
             for (var i=0; i < contacts.length; i++) {
-                if (contacts[i][fullName] === contacts) {
+                var name = contacts[i]["nameFirst"] + " " + contacts[i]["nameLast"];
+                
+                if (name === fullName) {
                     return contacts[i];
-                } else {
-                    return undefined;
                 }
+             
                
             }
-        }    
-            };
-}
+            return undefined;
+        },
+         removeContact: function(contact) {
+            for (var i=0; i < contacts.length; i++) {
+                if (contacts[i]["id"] === contact["id"]) {
+                   contacts.splice(i, 1);
+                 
+                }
+          
+            }
+            },
+        printAllContactNames: function() {
+            var names = "";
+            for (var i=0; i < contacts.length; i++) {
+                var fullName = contacts[i]["nameFirst"] + " " + contacts[i]["nameLast"];
+                names += fullName + "\n";
+                
+                
+            }
+            return names.trim();
+            }    
             
-        
+            };
+        } 
     
+            
+
+
+
+
+
+
 
 
 

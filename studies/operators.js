@@ -78,11 +78,12 @@ var x = "4";
 x = -x; // x = -4
 
 /* CONDITIONAL (TERNARY) OPERATOR
- * Only JavaScript operator to use 3 operands. The ternary operator takes place of an 
- * "if" statement. 
+ * Only JavaScript operator to use 3 operands. The ternary operator takes place 
+ * of an "if" statement. 
 */
 function getFree(isMember) {
-    return (isMember ? "$2.00" : "$10.00"); // if a member, return $2.00, else $10.00
+    return (isMember ? "$2.00" : "$10.00"); 
+    // if a member, return $2.00, else $10.00
 }
 console.log(getFree(true)); // logs $2.00
 
