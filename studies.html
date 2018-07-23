@@ -15,10 +15,10 @@
                         const $lineNumber = $('<div>').addClass('line-number').text(index);
                         const $content = $('<div>').addClass('line-content').text(line);
                         return $line.append($lineNumber, $content);
-                    });
+                    })
                     $div.append($splitElements);
                     $div.appendTo('.content');
-                })
+                });
             });
         </script>
         <link rel="stylesheet" href="studies.css" type="text/css" />
@@ -31,7 +31,7 @@
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="portfolio.html">Portfolio</a></li>
-                <li><a href="/studies/studies.html">Studies</a></li>
+                <li><a href="studies.html">Studies</a></li>
             </ul>
         </nav>
         <main>
