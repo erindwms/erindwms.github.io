@@ -10,6 +10,7 @@
 */
 
 // 1. SIMPLE (OR PRIMATIVE)
+
 /* Number - a numeric value
  * +Infinity - numeric value that represents positive infinity
  * -Infinity - numberic value that represents negative infinity
@@ -44,6 +45,7 @@ var object = {
     "name": "Madison",
     "food": "gumbo"
 };
+
 // Dot or bracket notation are used to access the values from an object.
 
 /*
@@ -73,9 +75,8 @@ function add(num1, num2) {
     return num1 + num2; 
     // the code to be executed
 }
+
 add(2, 4);   // the function being called, (2, 4) are the arguments
-
-
 
 /* These data types are complex because they aggregate other vaules and 
  * therefore are of indefinite size.
@@ -89,9 +90,9 @@ var b = a;
 /* The value stored in "b" is a refrence to the value stored in "a". 
  * Both "a" & "b" point to the same object.
 */ 
-
 b.one = "bar";
 console.log(a.one); //prints "bar"
 /* Changing the value at "b" effects all refrences because the value is 
  *refrenced to the same object.
 */ 
+

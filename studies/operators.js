@@ -10,12 +10,14 @@
  * Binary operators only work with two values.
  * Ternary operators only work with three values.
 */
- 
+
 /* 1. ARITHMETIC OPERATORS
  * Order of operations apply with arithmetic operators.
  * They are binary operators because they work with two operands.
 */
+
 // EXAMPLES OF ARITHMETIC OPERATORS
+
 // + addition
 console.log(2 + 7); // logs 9
 // - subtraction
@@ -27,9 +29,11 @@ console.log(6 / 3); // logs 2
 // % mondulo (remainder of division)
 console.log(4 % 3); // logs 1
  
+
 /* 2. COMPARISON OPERATORS
  * Compares 2 operands and return a boolean value, true or false.
 */ 
+
 // EXAMPLES OF COMPARISON OPERATORS
 // < less than
 console.log(3 < 6); // logs true
@@ -44,7 +48,6 @@ console.log(2 === 2); // logs true
 // == non - strict comparison
 console.log("6" == 6); // logs true
 
-
 /* 3. LOGICAL OPERATORS
  * Logical operators are typically used with boolean values. When they are, they
  * return a boolean value. 
@@ -57,7 +60,7 @@ console.log(1 < 2 && 1 > 0); // logs true
 // || is the "or" operator, one of the other must resolve to be true
 console.log(2 < 2 || 1 > 0); // logs true
 console.log(4 === 4 || 3 < 2); // logs true
-   
+
 // ! is the "bang" operator, it flips the truthiness of a value
 console.log(!true); // logs false
 console.log(!false); // logs true
@@ -65,6 +68,7 @@ console.log(!false); // logs true
 /* 4. UNARY OPERATORS
  * Only operator that works with one operand.
 */ 
+
 /* The "typeof" operator returns a string indicating the type of the unevaluated
  * operand entered.
 */ 
@@ -81,6 +85,7 @@ x = -x; // x = -4
  * Only JavaScript operator to use 3 operands. The ternary operator takes place 
  * of an "if" statement. 
 */
+
 function getFree(isMember) {
     return (isMember ? "$2.00" : "$10.00"); 
     // if a member, return $2.00, else $10.00
@@ -90,6 +95,7 @@ console.log(getFree(true)); // logs $2.00
 /* 5. ASSIGNMENT OPERATORS
  * Assigns a value to the left operand based on the value of the right operand.
 */
+
 // EXAMPLES OF ASSIGNMENT OPERATORS
 // = assigns value to a variable
 var b = 10;
@@ -104,3 +110,4 @@ console.log(b *= 5); // logs 50
 console.log(b /= 2);  // logs 5
 // %= renainder assignment 
 console.log(b %= 4); // logs 2
+

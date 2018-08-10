@@ -18,12 +18,12 @@
 
 // 1. declaration //
 var myName;
-
 /*
  * At the declaration phase, the variable myName is undefined because we have 
  * NOT initialized
  * it to anything
  */
+ 
 console.log(myName); // prints => undefined
 
 // 2. assignment //
@@ -37,8 +37,11 @@ console.log(myName); // prints => Denise
 /* NOTE: We can assign and re-assign anything to a variable - we cannot do this 
  * with constants
 */ 
+
 var myVariable = 1;
+
 var myVariable = true;
+
 myVariable = "someString";
 
 // 4. hoisting
@@ -47,7 +50,9 @@ myVariable = "someString";
  * Hoisting is JavaScript's default behavior of moving all declarations to the 
  * top of the current scope.
  */
+
  
+
 // 5. let
 /* The keyword used to declare a block scoped variable is let.
  * Lets are scoped to "if" statements, loops, or functions.
@@ -58,17 +63,22 @@ myVariable = "someString";
 let x = 1;
 if (x === 1) {
     let x = 2;
+
     
-    console.log(x); 
+  console.log(x); 
+
 }
+
 /*2 will print to the console since the x = 2 is limited in scope to the block 
  *in which it was defined.
 */
 
 console.log(x); 
+
 // 1 will print to the console since x = 1 is in the global scope
 
 // 6. const
+
 /* Const is the keyword to declare a constant.
  * Constants must be assigned at declaration & cannot be re-assigned.
  * Constants are block scope. That means they are scoped to "if" statements, 
@@ -85,7 +95,6 @@ const c = 1;
 { 
   const c = 2;
 }  
-
 console.log(c); 
 /* logs 1 since the const variable "c" has already been declared uniquely within 
  * the global scope.

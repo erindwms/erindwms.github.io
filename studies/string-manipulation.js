@@ -42,6 +42,7 @@ message = message + " to New Orleans!"; // logs "Welcome to New Orleans!"
  * indexOf() method. Also the indexOf() method cannot take powerful 
  * search values.
 */ 
+
 // concat()
 // The concat() method joins two or more strings.
 // The concat() method can be used in place of a '+' to join strings.
