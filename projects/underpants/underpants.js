@@ -506,9 +506,31 @@ _.some = (collection, action) => {
 *   _.reduce([1,2,3], function(previousSum, currentValue, currentIndex){ return previousSum + currentValue }, 0) -> 6
 */
 
+//given an array, a function, and a seed
 _.reduce = (array, action, seed) => {
+    //call function for every element in collection, passing the previous result, element, index
     
-}
+    //use seed as the previous result on the first iteration
+    //on the next iteration use the return value of function as the previous result
+    //use the first element/value of collection as seed if no seed is given
+    //after the last iteration, return the value of the final function call
+    if (seed !== undefined){
+        for (var i = 0; i < array.length; i++) {
+            seed =  action(seed, array[i], i);
+            
+        }
+    }
+        
+        if (seed === undefined) {
+            seed = array[0];
+        for (var i = 1; i < array.length; i++) {
+            seed = action(seed, array[i], i);
+        }    
+        }  
+    
+return seed;
+};
+
 
 /** _.extend()
 * Arguments:
@@ -525,9 +547,16 @@ _.reduce = (array, action, seed) => {
 *   _.extend(data, {a:"two"}); -> data now equals {a:"two"}
 */
 
-_.extend = () => {
-    
+_.extend = (object,...theArgs) => {
+  
+   for (var i = 0; i < theArgs.length; i++) {
+     for (var key in theArgs[i]) {
+        object[key] = theArgs[i][key]; 
+     }
 }
+return object;    
+    
+};
 
 //////////////////////////////////////////////////////////////////////
 // DON'T REMOVE THIS CODE ////////////////////////////////////////////
